@@ -31,11 +31,13 @@ class MainActivity : AppCompatActivity() {
 
         val tablayout = findViewById<TabLayout>(R.id.mytablayout)
 
+        tablayout.setBackgroundResource(android.R.color.transparent)
+
         viewpager2.adapter = pageradapter
 
         TabLayoutMediator(tablayout ,viewpager2 ,object :TabLayoutMediator.TabConfigurationStrategy{
             override fun onConfigureTab(tab: TabLayout.Tab, position: Int) {
-                tab.text = position.toString()
+                tab.setIcon(R.drawable.circle_background)
             }
 
         }).attach()
