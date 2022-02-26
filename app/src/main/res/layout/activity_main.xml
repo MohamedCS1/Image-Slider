@@ -8,25 +8,24 @@
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/myviewpager"
-        android:layout_width="match_parent"
-        android:layout_height="354dp"
+        android:layout_width="415dp"
+        android:layout_height="374dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/mytablayout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/myviewpager"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:tabGravity="center"
         app:tabIndicatorHeight="0dp"
-        app:tabGravity= "center"
-        app:tabPaddingStart="0dp"
+        app:tabMaxWidth="12dp"
         app:tabPaddingEnd="0dp"
-        >
+        app:tabPaddingStart="0dp">
 
     </com.google.android.material.tabs.TabLayout>
 

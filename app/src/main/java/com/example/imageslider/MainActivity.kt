@@ -33,6 +33,8 @@ class MainActivity : AppCompatActivity() {
 
         tablayout.setBackgroundResource(android.R.color.transparent)
 
+        viewpager2.setPageTransformer(ZoomOutPageTransformer())
+
         viewpager2.adapter = pageradapter
 
         TabLayoutMediator(tablayout ,viewpager2 ,object :TabLayoutMediator.TabConfigurationStrategy{
